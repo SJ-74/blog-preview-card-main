@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
+
+// @font-face {
+//     font-family: "Figtree";
+//     src: url(../assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
+//     font-weight: 500 800;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Figtree";
+//     src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
+//     font-weight: 500 800;
+//     font-style: italic;
+// }
+
+$bg-body: hsl(47, 88%, 63%);
+$clr-primary: hsl(0, 0%, 50%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+$fw-medium: 500;
+$fw-extrabold: 800;
+$brdr-radius: 20px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Figtree", sans-serif;
+    font-weight: $fw-medium;
+    font-size: 0.875rem;
+
+    background: $bg-body;
+    color: $clr-primary;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    background: $white;
+
+    max-width: 327px;
+
+    padding: 1.5em;
+    border-radius: $brdr-radius;
+    // box-shadow: 8px 8px $black;
+    filter: drop-shadow(8px 8px $black);
+    border: 1px solid $black;
+}
+
+.hero-img {
+    border-radius: 10px;
+
+    margin-bottom: 24px;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    font-weight: $fw-extrabold;
+    color: $black;
+
+    &:hover{
+        color: $bg-body;
+        cursor: pointer;
+    }
+}
+
+.badge {
+    font-weight: $fw-extrabold;
+    padding: 0.25em 0.75em;
+    display: block;
+    background-color: $bg-body;
+    color: $black;
+    border-radius: 4px;
+}
+
+.date{
+    color: $black;
+}
+
+.image-avatar {
+    max-width: 32px;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.name-author{
+    font-weight: $fw-extrabold;
+    color: $black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
