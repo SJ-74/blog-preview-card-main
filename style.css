@@ -27,8 +27,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  margin-block: auto;
   background: hsl(0, 0%, 100%);
-  max-width: 327px;
+  max-width: min(90%, 327px);
   padding: 1.5em;
   border-radius: 20px;
   filter: drop-shadow(8px 8px hsl(0, 0%, 7%));

@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap');
 
-// @font-face {
-//     font-family: "Figtree";
-//     src: url(../assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
-//     font-weight: 500 800;
-//     font-style: normal;
-// }
-
-// @font-face {
-//     font-family: "Figtree";
-//     src: url(../assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format("truetype");
-//     font-weight: 500 800;
-//     font-style: italic;
-// }
-
 $bg-body: hsl(47, 88%, 63%);
 $clr-primary: hsl(0, 0%, 50%);
 $white: hsl(0, 0%, 100%);
@@ -53,14 +39,14 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    margin-block: auto;
 
     background: $white;
 
-    max-width: 327px;
+    max-width: min(90%, 327px);
 
     padding: 1.5em;
     border-radius: $brdr-radius;
-    // box-shadow: 8px 8px $black;
     filter: drop-shadow(8px 8px $black);
     border: 1px solid $black;
 }
